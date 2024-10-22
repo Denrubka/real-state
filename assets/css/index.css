@@ -1,0 +1,17 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./vars.css');
+@import url('./style.css');
+
+/* blocks */
+@import url('./blocks/header.css');
+@import url('./blocks/hero.css');
+@import url('./blocks/achievements.css');
+@import url('./blocks/testimonial.css');
+@import url('./blocks/trustpilot.css');
+@import url('./blocks/benefits.css');
+@import url('./blocks/catalog.css');
+@import url('./blocks/product-card.css');
+@import url('./blocks/features.css');
+@import url('./blocks/cta.css');
+@import url('./blocks/footer.css');

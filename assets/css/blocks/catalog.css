@@ -1,0 +1,131 @@
+.catalog {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #fff 0%, #f0effb 100%);
+}
+
+.catalog__container {
+  overflow: hidden;
+}
+
+.catalog__subtitle {
+  margin-bottom: 72px;
+}
+
+.catalog__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.catalog__tabs {
+  display: flex;
+  gap: 8px;
+  background: #f0effb;
+  border: 2px solid #e0def7;
+  border-radius: 8px;
+  padding: 6px 8px;
+  width: fit-content;
+}
+
+.catalog__tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: var(--second-color);
+  padding: 9px 23px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  opacity: .5;
+  transition: all .2s linear;
+}
+
+.catalog__tab-btn:hover {
+  opacity: 1;
+}
+
+.catalog__tab.active .catalog__tab-btn {
+  font-weight: 700;
+  border-color: #e0def7;
+  background: #FFFFFF;
+  box-shadow: 0 3px 40px 0 rgba(14, 8, 84, 0.05);
+  color: var(--violet-light-color);
+  opacity: 1;
+}
+
+.catalog__slider {
+  margin: 0 -8px;
+  padding: 0 8px;
+  overflow: visible;
+}
+
+.catalog__slider-slide {
+  max-width: 352px;
+  height: auto;
+}
+
+.catalog__more {
+  margin: 72px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    padding: 48px 0;
+  }
+
+  .catalog__subtitle {
+    margin-bottom: 48px;
+  }
+
+  .catalog__more {
+    margin: 48px auto 0 auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .catalog__head {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .catalog__search {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog__slider-slide {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .catalog__search {
+    max-width: 327px;
+  }
+
+  .catalog__tab-btn {
+    padding: 9px 16px;
+  }
+}
+
+@media (max-width: 370px) {
+  .catalog__search {
+    max-width: 272px;
+  }
+
+  .catalog__tab-btn {
+    font-size: 14px;
+    padding: 9px 13px;
+  }
+
+  .catalog__tab-btn__icon {
+    width: 15px;
+    height: 15px;
+  }
+}

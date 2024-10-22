@@ -1,0 +1,45 @@
+.trustpilot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 260px;
+  width: 100%;
+  padding: 24px 24px 32px 24px;
+  border-radius: 8px 0 0 0;
+  background: var(--main-color) url('../../img/trustpilot-lines.png') no-repeat right bottom;
+}
+
+.trustpilot__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.trustpilot__title {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.trustpilot__stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.trustpilot__reviews {
+  font-family: 'Circular std book';
+  font-size: 14px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .trustpilot {
+    display: none;
+  }
+} 
